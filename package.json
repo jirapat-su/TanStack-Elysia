@@ -5,13 +5,18 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "format": "turbo run format",
+    "check-types": "turbo run check-types",
+    "_____________deps_scripts_____________": "",
+    "check-deps": "bunx taze -r",
+    "upgrade-deps": "bunx taze -r --interactive",
+    "clean-deps": "bun scripts/clean-deps.mjs"
   },
   "devDependencies": {
-    "prettier": "^3.7.4",
+    "@biomejs/biome": "^2.4.10",
+    "@types/node": "^25.5.2",
     "turbo": "^2.9.5",
-    "typescript": "5.9.2"
+    "typescript": "^6.0.2"
   },
   "engines": {
     "node": ">=18"

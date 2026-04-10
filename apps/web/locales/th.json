@@ -1,0 +1,44 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+
+  "common_app_name": "แอปของฉัน",
+  "common_copyright": "© {year} แอปของฉัน สงวนลิขสิทธิ์",
+
+  "nav_home": "หน้าแรก",
+  "nav_about": "เกี่ยวกับ",
+  "nav_example": "ตัวอย่าง",
+  "nav_language": "ภาษา",
+
+  "theme_light": "สว่าง",
+  "theme_dark": "มืด",
+  "theme_system": "ระบบ",
+
+  "home_title": "สร้างแอปยุคใหม่",
+  "home_description": "Monorepo แบบ full-stack ขับเคลื่อนด้วย TanStack Start, Elysia และ Effect — type safety ตั้งแต่ต้นจนจบ",
+  "home_hero_badge": "Full-Stack TypeScript",
+  "home_cta_get_started": "เริ่มต้นใช้งาน",
+  "home_cta_github": "GitHub",
+  "home_feature_routing_title": "Routing แบบ Type-Safe",
+  "home_feature_routing_description": "File-based routing ด้วย TanStack Router — params, search และ loaders มี type ครบ",
+  "home_feature_api_title": "Type Safety แบบ End-to-End",
+  "home_feature_api_description": "Elysia + Eden Treaty ให้คุณเรียก API แบบมี type ตั้งแต่ frontend ถึง backend — ไม่ต้อง codegen",
+  "home_feature_ui_title": "UI สวยงาม",
+  "home_feature_ui_description": "shadcn/ui components กับ Tailwind CSS v4 — dark mode, responsive และ accessible",
+  "home_feature_i18n_title": "รองรับหลายภาษา",
+  "home_feature_i18n_description": "Paraglide JS แปลภาษาตอน compile — ไม่มี overhead ตอน runtime, message มี type ครบ",
+
+  "about_title": "เกี่ยวกับโปรเจกต์นี้",
+  "about_description": "เทมเพลต monorepo แบบ full-stack ที่ออกแบบมาเพื่อประสบการณ์นักพัฒนาและ type safety",
+  "about_stack_title": "เทคโนโลยี",
+  "about_stack_frontend": "Frontend",
+  "about_stack_backend": "Backend",
+  "about_stack_tooling": "เครื่องมือ",
+  "about_philosophy_title": "แนวคิด",
+  "about_philosophy_description": "เทมเพลตนี้ให้ความสำคัญกับ type safety ตลอดทั้ง stack — ตั้งแต่ database ถึง UI ทุก API call มี type, ทุก route มีการ validate และทุก component ทำตาม pattern ที่สม่ำเสมอ",
+  "about_principles_correctness": "ถูกต้องเป็นอันดับแรก",
+  "about_principles_correctness_description": "TypeScript strict mode, Zod validation และ Effect สำหรับ error handling ช่วยให้มั่นใจในความน่าเชื่อถือ",
+  "about_principles_dx": "ประสบการณ์นักพัฒนา",
+  "about_principles_dx_description": "Hot reload, file-based routing และ end-to-end types หมายถึง boilerplate น้อยลง พัฒนาเร็วขึ้น",
+  "about_principles_performance": "ประสิทธิภาพ",
+  "about_principles_performance_description": "SSR พร้อม streaming, optimistic updates และ smart caching ผ่าน TanStack Query"
+}

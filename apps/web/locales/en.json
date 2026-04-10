@@ -1,0 +1,44 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+
+  "common_app_name": "My App",
+  "common_copyright": "© {year} My App. All rights reserved.",
+
+  "nav_home": "Home",
+  "nav_about": "About",
+  "nav_example": "Example",
+  "nav_language": "Language",
+
+  "theme_light": "Light",
+  "theme_dark": "Dark",
+  "theme_system": "System",
+
+  "home_title": "Build Modern Apps",
+  "home_description": "A full-stack monorepo powered by TanStack Start, Elysia, and Effect — with end-to-end type safety.",
+  "home_hero_badge": "Full-Stack TypeScript",
+  "home_cta_get_started": "Get Started",
+  "home_cta_github": "GitHub",
+  "home_feature_routing_title": "Type-Safe Routing",
+  "home_feature_routing_description": "File-based routing with TanStack Router — fully typed params, search, and loaders.",
+  "home_feature_api_title": "End-to-End Type Safety",
+  "home_feature_api_description": "Elysia + Eden Treaty gives you typed API calls from frontend to backend — zero codegen.",
+  "home_feature_ui_title": "Beautiful UI",
+  "home_feature_ui_description": "shadcn/ui components with Tailwind CSS v4 — dark mode, responsive, and accessible.",
+  "home_feature_i18n_title": "Internationalization",
+  "home_feature_i18n_description": "Paraglide JS with compile-time translations — zero runtime overhead, fully typed messages.",
+
+  "about_title": "About This Project",
+  "about_description": "A modern full-stack monorepo template designed for developer experience and type safety.",
+  "about_stack_title": "Tech Stack",
+  "about_stack_frontend": "Frontend",
+  "about_stack_backend": "Backend",
+  "about_stack_tooling": "Tooling",
+  "about_philosophy_title": "Philosophy",
+  "about_philosophy_description": "This template prioritizes type safety across the entire stack — from database to UI. Every API call is typed, every route is validated, and every component follows consistent patterns.",
+  "about_principles_correctness": "Correctness First",
+  "about_principles_correctness_description": "TypeScript strict mode, Zod validation, and Effect for error handling ensure reliability.",
+  "about_principles_dx": "Developer Experience",
+  "about_principles_dx_description": "Hot reload, file-based routing, and end-to-end types mean less boilerplate, faster iteration.",
+  "about_principles_performance": "Performance",
+  "about_principles_performance_description": "SSR with streaming, optimistic updates, and smart caching via TanStack Query."
+}

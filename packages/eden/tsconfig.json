@@ -1,0 +1,10 @@
+{
+  "extends": "@repo/typescript-config/base.json",
+  "compilerOptions": {
+    "types": ["bun-types"],
+    "paths": {
+      "@repo/eden/*": ["./src/*"]
+    }
+  },
+  "include": ["src"]
+}

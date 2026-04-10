@@ -1,0 +1,64 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "if": "Bash(git commit*)",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/validate-commit-message.sh",
+            "statusMessage": "Validating commit message..."
+          },
+          {
+            "type": "command",
+            "if": "Bash(npm *)",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/block-package-manager.sh",
+            "statusMessage": "Checking package manager..."
+          },
+          {
+            "type": "command",
+            "if": "Bash(yarn *)",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/block-package-manager.sh",
+            "statusMessage": "Checking package manager..."
+          },
+          {
+            "type": "command",
+            "if": "Bash(pnpm *)",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/block-package-manager.sh",
+            "statusMessage": "Checking package manager..."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/run-lint.sh",
+            "timeout": 60,
+            "statusMessage": "Running bun run lint..."
+          },
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/check-file-length.sh",
+            "statusMessage": "Checking file length..."
+          },
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/check-elysia-name.sh",
+            "statusMessage": "Checking Elysia instances..."
+          },
+          {
+            "type": "prompt",
+            "if": "Edit(apps/**) || Write(apps/**)",
+            "prompt": "Read the checklist files at .claude/rules/checklist-web.md and .claude/rules/checklist-api.md. Then check the file that was just edited against the applicable checklist (web if in apps/web/, api if in apps/api/). Report any violations found. If all items pass say 'Checklist: ALL PASS'. Be concise. IMPORTANT: This is informational feedback only. Do NOT stop working or halt continuation. Note any issues and continue with the current task.",
+            "statusMessage": "Verifying checklist..."
+          }
+        ]
+      }
+    ]
+  }
+}
